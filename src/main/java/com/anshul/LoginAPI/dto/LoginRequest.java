@@ -8,7 +8,6 @@ public record LoginRequest(
         @Email(message = "Email must be in correct format")
         @JsonProperty("email")
         String email,
-
         @NotNull(message = "Password should be present")
         @NotEmpty(message = "Password should be present")
         @NotBlank(message = "Password should be present")
