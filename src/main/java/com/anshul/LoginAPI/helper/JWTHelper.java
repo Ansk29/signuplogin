@@ -8,13 +8,14 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
+
+
 @Component
-public class JwtHelper {
+public class JWTHelper {
     private String SECRET_KEY = "cr666N7wIV+KJ2xOQpWtcfAekL4YXd9gbnJMs8SJ9sI=";
 
     // Extract username from the token
     public String extractUsername(String token) {
-
         return extractClaim(token, Claims::getSubject);
     }
 
